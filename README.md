@@ -13,4 +13,4 @@ I use Unity 2022.1.0b5 currently
 
 ![Editor Image](unity.jpg?raw=true "Server Database")
 
-After build at flutter in build/web/UnityLibrary/index.html check file transparency-fix-flutter.txt to fix transparency on web build.
+After build at flutter in build/web/UnityLibrary/index.html check file TransparencyFix/transparency-fix-flutter.txt to fix transparency on web build.
