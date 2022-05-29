@@ -1,5 +1,5 @@
-Fix for Web build : replace in  build/web/UnityLibrary/index.html to get transparency in flutter and I add 50 here to subtract 
-at unitywidget so one does not get scrollbars! Also file TransparentBackground.jslib is necessary. index.html changes not between builds
+Fix for Web build : replace in  build/web/UnityLibrary/index.html to get transparency in flutter and I add 50 to width and height in flutter
+at unitywidget so subtract 50 here. This to avoid getting scrollbars! Also file TransparentBackground.jslib is necessary. index.html changes not between builds
 so convinient to have copy just outside web directory to replace between builds...
 
 <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
