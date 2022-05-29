@@ -10,24 +10,4 @@ I use Unity 2022.1.0b5 currently
 
 ![Editor Image](unity.jpg?raw=true "Server Database")
 
-After build at flutter in build/web/UnityLibrary/index.html replace:
-<canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/UnityLibrary.loader.js"></script>
-            <script>
- 
-  with
-  
- <script src="Build/UnityLibrary.loader.js"></script>
-            <script>
-              var width = (window.innerWidth-50);
-              var height = (window.innerHeight-50);
-              var canvas = document.createElement('canvas');
-              canvas.id     = "unity-canvas";
-              canvas.width  = width;
-              canvas.height = height;
-              canvas.style.width = width + "px";
-              canvas.style.height = height + "px";
-              canvas.style.background = "transparent";
-              document.body.appendChild(canvas);
-
-To maintain background transparency. Also the file TransparentBackground.jslib in assets folder is necessary.          
+After build at flutter in build/web/UnityLibrary/index.html check file transparency-fix-flutter.txt to fix transparency on web build.
